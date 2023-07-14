@@ -45,6 +45,7 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   padding: 0 20px;
+  overflow-x: hidden;
 `;
 
 const Logo = styled.img`
@@ -60,36 +61,36 @@ const NavItems = styled.div`
     align-items: center;
     padding: 13px;
 
-      img {
+    img {
       width: 20px;
-      }
+    }
 
-        span {
-        color: white;
-        text-transform: uppercase;
-        font-size: 13px;
-        letter-spacing: 1.42px;
-        position: relative;
+    span {
+      color: white;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1.42px;
+      position: relative;
 
-          &:after {
-            content:'';
-            height: 2px;
-            background-color: white;
-            position: absolute;
-            bottom: -6px;
-            left: 0;
-            right: 0;
-            transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-            transform: scaleX(0);
-            opacity: 0;
-          }
+      &:after {
+        content: "";
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        right: 0;
+        transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+        transform: scaleX(0);
+        opacity: 0;
       }
-      &:hover {
-        span:after{
-          transform: scaleX(1);
-          opacity: 1;
-        }
+    }
+    &:hover {
+      span:after {
+        transform: scaleX(1);
+        opacity: 1;
       }
+    }
   }
 
   @media (width: 768px) {
