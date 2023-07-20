@@ -1,23 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+import { DefaultPlayer as Video } from 'react-html5video';
+import 'react-html5video/dist/styles.css';
 
 function Viewers() {
   return (
 		<Container>
 			<Wrap>
-				<img src="/images/viewers-disney.png" />
+				<img src="/images/viewers-disney.png" alt="" />
 			</Wrap>
 			<Wrap>
-				<img src="/images/viewers-starwars.png" />
+				<img src="/images/viewers-starwars.png" alt=""  />
 			</Wrap>
 			<Wrap>
-				<img src="/images/viewers-pixar.png" />
+				<img src="/images/viewers-pixar.png" alt="" />
 			</Wrap>
 			<Wrap>
-				<img src="/images/viewers-national.png" />
+				<img src="/images/viewers-national.png" alt=""  />
 			</Wrap>
 			<Wrap>
-				<img src="/images/viewers-marvel.png" />
+				<img src="/images/viewers-marvel.png" alt="" />
 			</Wrap>
 
 		</Container>
@@ -40,11 +42,13 @@ const Wrap = styled.div`
 	rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 	transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 	border-radius: 10px;
+
 	img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 	}
+
 
 	&:hover {
 		transform: scale(1.05);
