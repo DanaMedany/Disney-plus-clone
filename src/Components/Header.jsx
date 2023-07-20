@@ -27,6 +27,7 @@ function Header() {
           name:  user.displayName,
           photo: user.photoURL,
         }))
+        navigate("/")
       }
     })
   }, [])
